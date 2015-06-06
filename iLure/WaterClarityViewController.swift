@@ -10,26 +10,43 @@ import UIKit
 
 class WaterClarityViewController: UIViewController {
 
+    @IBOutlet weak var waterTypeLabel: UILabel!
+    var waterType: String = ""
+    var workingParameters = ["" : ""]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        waterTypeLabel.text = waterType
+        println(workingParameters)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Pulling in variables via segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "clearWaterSelectedSegue" {
+            let skiesController = segue.destinationViewController as! SkiesViewController
+            workingParameters["waterClarity"] = "Clear"
+            var currentSkiesType = workingParameters["waterType"]!
+            skiesController.waterClarity = "\(currentSkiesType)"
+            skiesController.workingParameters = workingParameters
+        }
+        if segue.identifier == "stainedWaterSelectedSegue" {
+            let skiesController = segue.destinationViewController as! SkiesViewController
+            workingParameters["waterClarity"] = "Stained"
+            var currentSkiesType = workingParameters["waterType"]!
+            skiesController.waterClarity = "\(currentSkiesType)"
+            skiesController.workingParameters = workingParameters
+        }
+        if segue.identifier == "muddyWaterSelectedSegue" {
+            let skiesController = segue.destinationViewController as! SkiesViewController
+            workingParameters["waterClarity"] = "Muddy"
+            var currentSkiesType = workingParameters["waterType"]!
+            skiesController.waterClarity = "\(currentSkiesType)"
+            skiesController.workingParameters = workingParameters
+        }
     }
-    */
-
 }

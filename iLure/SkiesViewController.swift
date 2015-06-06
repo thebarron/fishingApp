@@ -10,26 +10,50 @@ import UIKit
 
 class SkiesViewController: UIViewController {
 
+
+    @IBOutlet weak var waterClarityLabel: UILabel!
+    var waterClarity: String = ""
+    var waterType: String = ""
+    var workingParameters = ["" : ""]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        var workingWaterType = workingParameters["waterType"]!
+        var workingClarity = workingParameters["waterClarity"]!
+        
+        waterClarityLabel.text = "\(workingWaterType) / \(workingClarity)"
+        println(workingParameters)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Pulling in variables via segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "blueSkySelectedSegue" {
+            let windController = segue.destinationViewController as! WindViewController
+            workingParameters["skiesType"] = "Blue"
+            var currentSkiesType = workingParameters["skiesType"]!
+            windController.skiesType = "\(currentSkiesType)"
+            windController.workingParameters = workingParameters
+        }
+        if segue.identifier == "overcastSkySelectedSegue" {
+            let windController = segue.destinationViewController as! WindViewController
+            workingParameters["skiesType"] = "Overcast"
+            var currentSkiesType = workingParameters["skiesType"]!
+            windController.skiesType = "\(currentSkiesType)"
+            windController.workingParameters = workingParameters
+        }
+        if segue.identifier == "stormySkySelectedSegue" {
+            let windController = segue.destinationViewController as! WindViewController
+            workingParameters["skiesType"] = "Stormy"
+            var currentSkiesType = workingParameters["skiesType"]!
+            windController.skiesType = "\(currentSkiesType)"
+            windController.workingParameters = workingParameters
+        }
     }
-    */
 
+    
 }

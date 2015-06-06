@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66814D8D1B21233400968427 /* SkiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66814D8C1B21233400968427 /* SkiesViewController.swift */; };
+		66814D8F1B212D0100968427 /* FishingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66814D8E1B212D0100968427 /* FishingParameters.swift */; };
+		66814D911B228C1400968427 /* WindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66814D901B228C1400968427 /* WindViewController.swift */; };
 		66D047621B20CDFA000D480C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D047611B20CDFA000D480C /* AppDelegate.swift */; };
-		66D047641B20CDFA000D480C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D047631B20CDFA000D480C /* ViewController.swift */; };
+		66D047641B20CDFA000D480C /* BodyOfWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D047631B20CDFA000D480C /* BodyOfWaterViewController.swift */; };
 		66D047671B20CDFA000D480C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D047651B20CDFA000D480C /* Main.storyboard */; };
 		66D047691B20CDFA000D480C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D047681B20CDFA000D480C /* Images.xcassets */; };
 		66D0476C1B20CDFA000D480C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D0476A1B20CDFA000D480C /* LaunchScreen.xib */; };
 		66D047781B20CDFA000D480C /* iLureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D047771B20CDFA000D480C /* iLureTests.swift */; };
+		66D047821B20D506000D480C /* WaterClarityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D047811B20D506000D480C /* WaterClarityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66814D8C1B21233400968427 /* SkiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkiesViewController.swift; sourceTree = "<group>"; };
+		66814D8E1B212D0100968427 /* FishingParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishingParameters.swift; sourceTree = "<group>"; };
+		66814D901B228C1400968427 /* WindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindViewController.swift; sourceTree = "<group>"; };
 		66D0475C1B20CDFA000D480C /* iLure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D047601B20CDFA000D480C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D047611B20CDFA000D480C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66D047631B20CDFA000D480C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66D047631B20CDFA000D480C /* BodyOfWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyOfWaterViewController.swift; sourceTree = "<group>"; };
 		66D047661B20CDFA000D480C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66D047681B20CDFA000D480C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66D0476B1B20CDFA000D480C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		66D047711B20CDFA000D480C /* iLureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D047761B20CDFA000D480C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D047771B20CDFA000D480C /* iLureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLureTests.swift; sourceTree = "<group>"; };
+		66D047811B20D506000D480C /* WaterClarityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterClarityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				66D047611B20CDFA000D480C /* AppDelegate.swift */,
-				66D047631B20CDFA000D480C /* ViewController.swift */,
+				66D047631B20CDFA000D480C /* BodyOfWaterViewController.swift */,
+				66D047811B20D506000D480C /* WaterClarityViewController.swift */,
+				66814D8C1B21233400968427 /* SkiesViewController.swift */,
+				66814D901B228C1400968427 /* WindViewController.swift */,
+				66814D8E1B212D0100968427 /* FishingParameters.swift */,
 				66D047651B20CDFA000D480C /* Main.storyboard */,
 				66D047681B20CDFA000D480C /* Images.xcassets */,
 				66D0476A1B20CDFA000D480C /* LaunchScreen.xib */,
@@ -212,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D047641B20CDFA000D480C /* ViewController.swift in Sources */,
+				66D047641B20CDFA000D480C /* BodyOfWaterViewController.swift in Sources */,
 				66D047621B20CDFA000D480C /* AppDelegate.swift in Sources */,
+				66814D8D1B21233400968427 /* SkiesViewController.swift in Sources */,
+				66814D8F1B212D0100968427 /* FishingParameters.swift in Sources */,
+				66814D911B228C1400968427 /* WindViewController.swift in Sources */,
+				66D047821B20D506000D480C /* WaterClarityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +425,7 @@
 				66D0477D1B20CDFA000D480C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66D0477E1B20CDFA000D480C /* Build configuration list for PBXNativeTarget "iLureTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				66D047801B20CDFA000D480C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

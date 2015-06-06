@@ -8,18 +8,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BodyOfWaterViewController: UIViewController {
+    
+    var workingParameters = FishingParameters().currentParameters
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "lakeSelectedSegue" {
+            let waterClarityController = segue.destinationViewController as! WaterClarityViewController
+            workingParameters["waterType"] = "Lake"
+            var currentWaterType = workingParameters["waterType"]!
+            waterClarityController.waterType = "\(currentWaterType) Selected"
+            waterClarityController.workingParameters = workingParameters
+        }
+        if segue.identifier == "pondSelectedSegue" {
+            let waterClarityController = segue.destinationViewController as! WaterClarityViewController
+            workingParameters["waterType"] = "Pond"
+            var currentWaterType = workingParameters["waterType"]!
+            waterClarityController.waterType = "\(currentWaterType) Selected"
+            waterClarityController.workingParameters = workingParameters
+        }
+    }
+    
+    
+    
+    
 
 }
 

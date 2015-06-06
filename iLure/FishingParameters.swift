@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct FishingParameters {
+    var currentParameters = [
+            "waterType": "boobs",
+            "waterClarity": "boobs",
+            "skiesType": "boobs",
+            "wind": "boobs"
+    ]
+}
